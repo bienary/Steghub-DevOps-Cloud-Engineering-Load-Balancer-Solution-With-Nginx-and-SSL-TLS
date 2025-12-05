@@ -39,3 +39,13 @@ Port	Protocol	Description
 
 <img width="1160" height="410" alt="image" src="https://github.com/user-attachments/assets/d2ba4806-bc73-4bbd-9ea0-a4d1bf40dd38" />
 
+## Configure Local DNS
+
+- Access the instace via SSH
+- Update the /etc/hosts file with web servers' names and their local IP addresses:
+```
+sudo vi /etc/hosts
+```
+
+<img width="1321" height="281" alt="image" src="https://github.com/user-attachments/assets/04cfa069-d472-4a6e-aede-b29c25af523b" />
+
