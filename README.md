@@ -49,3 +49,23 @@ sudo vi /etc/hosts
 
 <img width="1321" height="281" alt="image" src="https://github.com/user-attachments/assets/04cfa069-d472-4a6e-aede-b29c25af523b" />
 
+## Install and Configure Nginx
+
+- Update the instance and Install Nginx Install Nginx
+
+```
+sudo apt update && sudo apt upgrade -y
+```
+
+```
+sudo apt install nginx
+```
+
+<img width="1315" height="279" alt="image" src="https://github.com/user-attachments/assets/304db253-8c0c-44d2-9cf1-ed258a914fa2" />
+
+<img width="1323" height="733" alt="image" src="https://github.com/user-attachments/assets/c61af1f2-ba0d-4540-99fb-150b6eb13e44" />
+
+<img width="1324" height="734" alt="image" src="https://github.com/user-attachments/assets/b7afd916-008a-45a8-af93-77454f2a70c3" />
+
+
+## Configure Nginx as a Load Balancer
