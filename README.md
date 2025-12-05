@@ -34,6 +34,8 @@ Port	Protocol	Description
 80	TCP	HTTP (web traffic)
 443	TCP	HTTPS (secure web traffic)
 
-<img width="1158" height="601" alt="image" src="https://github.com/user-attachments/assets/d1ca0855-8900-4697-a550-96cb0baef4fc" />
+<img width="1147" height="310" alt="image" src="https://github.com/user-attachments/assets/9396d2a1-d74d-436c-af7a-c47df7e734d6" />
 
+
+<img width="1160" height="410" alt="image" src="https://github.com/user-attachments/assets/d2ba4806-bc73-4bbd-9ea0-a4d1bf40dd38" />
 
