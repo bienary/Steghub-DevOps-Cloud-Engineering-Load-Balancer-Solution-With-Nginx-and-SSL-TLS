@@ -13,3 +13,23 @@ This project consists of two parts:
 
 <img width="888" height="519" alt="image" src="https://github.com/user-attachments/assets/9f973ff1-4b47-473b-8a9b-178a8d9075e4" />
 
+
+# Part1: Configuring Nginx As A Load Balancer
+
+## Create an EC2 Virtual Machine: Nginx LB
+
+### Follow the steps below to launch an AWS EC2 instance that will serve as an Nginx load balancer.
+
+1. Launch an EC2 Instance
+
+> AMI: Ubuntu Server 24.04 LTS
+
+> Instance Name: Nginx LB
+
+2. Configure Security Group
+
+### Ensure the instance is accessible for both HTTP and HTTPS traffic by opening the necessary ports:
+
+Port	Protocol	Description
+80	TCP	HTTP (web traffic)
+443	TCP	HTTPS (secure web traffic)
