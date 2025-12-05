@@ -4,5 +4,12 @@ This project focuses on deploying a scalable and secure web architecture by impl
 
 By completing this project, engineers gain real-world experience configuring Nginx load-balancing mechanisms, establishing trusted SSL termination, managing DNS and domain validation, and ensuring compliant, encrypted data flow across all layers of a web system.
 
+## Task
+This project consists of two parts:
+
+> Configure Nginx as a Load Balancer
+
+> Register a new domain name and configure secured connection using SSL/TLS certificates
+
 <img width="888" height="519" alt="image" src="https://github.com/user-attachments/assets/9f973ff1-4b47-473b-8a9b-178a8d9075e4" />
 
