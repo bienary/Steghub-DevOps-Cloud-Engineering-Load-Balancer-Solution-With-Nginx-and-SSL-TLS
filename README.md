@@ -69,3 +69,30 @@ sudo apt install nginx
 
 
 ## Configure Nginx as a Load Balancer
+
+- Open the Nginx configuration file:
+
+```
+sudo vi /etc/nginx/nginx.conf
+```
+
+
+- Add the following configuration in the http section:
+
+```
+upstream myproject {
+   server Web1 weight=5;
+   server Web2 weight=5;
+}
+
+server {
+    listen 80;
+    server_name www.domain.com;
+
+    location / {
+        proxy_pass http://myproject;
+    }
+}
+```
+
+<img width="1324" height="734" alt="image" src="https://github.com/user-attachments/assets/608c9c35-8434-47b8-af30-5c0257cfdf3e" />
