@@ -14,7 +14,7 @@ This project consists of two parts:
 <img width="888" height="519" alt="image" src="https://github.com/user-attachments/assets/9f973ff1-4b47-473b-8a9b-178a8d9075e4" />
 
 
-# Part1: Configuring Nginx As A Load Balancer
+# Part 1: Configuring Nginx as a Load Balancer
 
 ## Create an EC2 Virtual Machine: Nginx LB
 
@@ -33,3 +33,7 @@ This project consists of two parts:
 Port	Protocol	Description
 80	TCP	HTTP (web traffic)
 443	TCP	HTTPS (secure web traffic)
+
+<img width="1158" height="601" alt="image" src="https://github.com/user-attachments/assets/d1ca0855-8900-4697-a550-96cb0baef4fc" />
+
+
