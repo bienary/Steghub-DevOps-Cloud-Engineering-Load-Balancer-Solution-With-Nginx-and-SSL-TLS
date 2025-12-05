@@ -22,7 +22,7 @@ This project consists of two parts:
 
 1. Launch an EC2 Instance
 
-> AMI: Ubuntu Server 24.04 LTS
+> Ubuntu Server 24.04 LTS
 
 > Instance Name: Nginx LB
 
