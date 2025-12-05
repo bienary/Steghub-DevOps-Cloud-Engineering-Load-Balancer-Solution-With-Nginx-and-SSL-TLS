@@ -96,3 +96,20 @@ server {
 ```
 
 <img width="1324" height="734" alt="image" src="https://github.com/user-attachments/assets/608c9c35-8434-47b8-af30-5c0257cfdf3e" />
+
+
+- Restart Nginx:
+
+```
+sudo systemctl restart nginx
+sudo systemctl status nginx
+```
+<img width="1325" height="426" alt="image" src="https://github.com/user-attachments/assets/83811890-6da0-4e75-bd87-c04d7deaa582" />
+
+## Testing the Connection:
+
+<img width="1325" height="426" alt="image" src="https://github.com/user-attachments/assets/e1a7ac5e-7f19-4c3f-92de-a895b15fe875" />
+
+<img width="1325" height="426" alt="image" src="https://github.com/user-attachments/assets/42d02fe3-3fc6-4e85-b19a-2145811812bf" />
+
+
