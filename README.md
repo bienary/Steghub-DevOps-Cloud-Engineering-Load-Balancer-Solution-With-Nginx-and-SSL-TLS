@@ -113,3 +113,8 @@ sudo systemctl status nginx
 <img width="1325" height="426" alt="image" src="https://github.com/user-attachments/assets/42d02fe3-3fc6-4e85-b19a-2145811812bf" />
 
 
+# Part 2: Registering a Domain and Configuring SSL/TLS
+
+- In order to get a valid SSL certificate - you need to register a new domain name, you can do it using any Domain name registrar (e.g., Godaddy, Domain.com, Bluehost) and register a new domain name. For this project.
+
+- Assign an Elastic IP to your Nginx LB server and associate your domain name with this Elastic IP.
