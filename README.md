@@ -212,4 +212,8 @@ crontab -e
 
 <img width="1305" height="638" alt="image" src="https://github.com/user-attachments/assets/39d0c63e-24cf-4380-9149-491a05e876c4" />
 
+<img width="1173" height="644" alt="image" src="https://github.com/user-attachments/assets/be0c3f87-11d6-4bd4-95f5-7380c1e3b89a" />
 
+---
+
+Deployed Nginx load balancing with SSL/TLS encryption to ensure secure communications. This setup enhances the performance and scalability of the web infrastructure while upholding robust security. It enables efficient handling of increased traffic, faster response times, and a reliable, protected environment for users.
