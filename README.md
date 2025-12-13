@@ -118,3 +118,98 @@ sudo systemctl status nginx
 - In order to get a valid SSL certificate - you need to register a new domain name, you can do it using any Domain name registrar (e.g., Godaddy, Domain.com, Bluehost) and register a new domain name. For this project.
 
 - Assign an Elastic IP to your Nginx LB server and associate your domain name with this Elastic IP.
+
+<img width="1319" height="635" alt="image" src="https://github.com/user-attachments/assets/3d673304-bb70-4345-9d22-4d98427abb0c" />
+
+<img width="1160" height="358" alt="image" src="https://github.com/user-attachments/assets/e3985994-b9c3-427e-983e-897217f038ec" />
+
+- Update A record in registrar to point to Nginx LB using Elastic IP address.
+
+- Adding records inside the Hosted Zone.
+
+### Configure Nginx to recognize your new domain name.
+
+- Update nginx.conf with your domain name:
+
+```
+sudo vi /etc/nginx/nginx.conf
+```
+
+> Replace server_name www.domain.com with your actual domain.
+
+> Confirm the configuration insdie the nginx.conf is Syntax ok.
+
+```
+sudo nginx -t
+```
+
+- Reload Nginx:
+
+```
+sudo systemctl reload nginx
+```
+
+### Launch the domain name on web-browser;
+
+<img width="1319" height="635" alt="Screenshot From 2025-12-13 01-11-43" src="https://github.com/user-attachments/assets/19668759-4bed-438c-810c-27b8dd4b7c02" />
+
+### Install Certbot and Obtain SSL/TLS Certificate
+
+- Ensure snapd is active
+
+```
+sudo systemctl status snapd
+```
+
+- Install Certbot:
+
+```
+sudo snap install --classic certbot
+```
+
+- Create a symlink for Certbot:
+
+```
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+- Obtain the SSL/TLS certificate:
+
+> Follow the prompt to configure and request for ssl certificate.
+
+```
+sudo certbot --nginx
+```
+
+<img width="1323" height="655" alt="image" src="https://github.com/user-attachments/assets/ee95df18-8950-426b-9bf8-d10fd80fd6eb" />
+
+<img width="1323" height="655" alt="image" src="https://github.com/user-attachments/assets/af156a18-0eff-4fef-af7f-9f1a486dcf6a" />
+
+<img width="1317" height="638" alt="image" src="https://github.com/user-attachments/assets/471986bc-7679-46af-b6e4-b019e75d6ffb" />
+
+
+### Set Up Automatic Certificate Renewal
+
+- Test the renewal process:
+
+```
+sudo certbot renew --dry-run
+```
+
+- Configure a cronjob for automatic renewal:
+
+```
+crontab -e
+```
+
+- Add the following line:
+
+```
+* */12 * * *   root /usr/bin/certbot renew > /dev/null 2>&1
+```
+
+<img width="1240" height="465" alt="image" src="https://github.com/user-attachments/assets/d9138799-af82-43be-a52f-ae3a5ec77a6d" />
+
+
+<img width="1305" height="638" alt="image" src="https://github.com/user-attachments/assets/39d0c63e-24cf-4380-9149-491a05e876c4" />
+
+
